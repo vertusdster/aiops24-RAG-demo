@@ -1,16 +1,14 @@
-> [!IMPORTANT]
-> 本分支用于Qwen2-7b为基础模型的赛道，使用智谱清言API为基础模型的赛道，请参考[glm分支](https://github.com/issaccv/aiops24-RAG-demo/tree/glm)
-
 # 快速开始
 
-克隆本仓库后，运行`run.sh`安装ollama和qwen-2-7b-instruct，以及初始化嵌入模型`BAAI/bge-small-zh-v1.5`
+克隆本仓库后，运行`run.sh`初始化嵌入模型`BAAI/bge-small-zh-v1.5`
 
 ```sh
 bash run.sh
 ```
 
 # 前置需求
-[Ollama](https://ollama.com/) 用于对LLM推理。
+
+请在[智谱开放平台](https://open.bigmodel.cn/usercenter/apikeys)申请API密钥，并填入`demo/.env`中
 
 向量数据库选用了[Qdrant](https://qdrant.tech/documentation/quick-start/)，可以使用in-memory模式进行调试
 
